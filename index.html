@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Animated Website</title>
 </head>
@@ -19,18 +20,26 @@
             <ul>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Services</a></li>
-                <li><a href="#">Usecases</a></li>
+                <li><a href="#">Use cases</a></li>
                 <li><a href="#">Testemations</a></li>
                 <li><button>Request a quote</button></li>
             </ul>
         </nav>
     </section>
-    <button data-collapse-toggle="navbar-default" type="button" class="menu-btn">
-        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <button class="menu-btn" onclick="show_menu()">
+        <svg class="bars" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd"
                 d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
                 clip-rule="evenodd">
             </path>
+        </svg>
+    </button>
+
+    <button class="hide-menu" onclick="hide_menu()">
+        <svg class="cross" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
         </svg>
     </button>
     <section class="section2">
@@ -49,12 +58,16 @@
             alt="">
         <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/company-logo-design-template-e089327a5c476ce5c70c74f7359c5898_screen.jpg?ts=1672291305"
             alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeUGCZnhSijszXICd_NxwJH832B7KDdNno03ztp0hcgQUKuh-p_uq5X94xG67bnSgf_Is&usqp=CAU"
+            alt="">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj47WLQcZqHbaoHlnDbLEH2SEJg7eOHgzTjA&s" alt="">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtZ6hqry8llQbpgfbTWNHprFqWVrDOBPj0BiyziI7e0lkq8uWy_OCEoox7mxzGnesEsIU&usqp=CAU"
             alt="">
         <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/a-logo-design%7C-company-logo-template-7246ba946d6686a9a5b984a1e4380b1b_screen.jpg?ts=1665828706"
             alt="">
         <img src="https://dynamic.brandcrowd.com/asset/logo/f98c81c7-cd69-41ee-8003-62a024b6ab6f/logo-search-grid-1x?logoTemplateVersion=5&v=638465194592700000"
+            alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtZ6hqry8llQbpgfbTWNHprFqWVrDOBPj0BiyziI7e0lkq8uWy_OCEoox7mxzGnesEsIU&usqp=CAU"
             alt="">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeUGCZnhSijszXICd_NxwJH832B7KDdNno03ztp0hcgQUKuh-p_uq5X94xG67bnSgf_Is&usqp=CAU"
             alt="">
@@ -193,10 +206,10 @@
         </div>
     </section>
     <section class="section9">
-        <div class="note5">
+        <div class="note1">
             <h1>Contact Us</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nisi eligendi debitis reiciendis nostrum
-                culpa.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima eius similique nobis praesentium
+                excepturi dolorum </p>
         </div>
     </section>
     <section class="section10">

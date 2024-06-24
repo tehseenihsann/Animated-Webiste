@@ -67,7 +67,8 @@ nav ul button:hover {
     background-color: #B9FF66;
 }
 
-.menu-btn {
+.menu-btn,
+.hide-menu {
     width: 30px;
     height: 30px;
     top: 0;
@@ -83,11 +84,13 @@ nav ul button:hover {
     border: none;
 }
 
-.menu-btn:hover {
+.menu-btn:hover,
+.hide-menu:hover {
     color: rgb(63, 63, 63);
 }
 
-.menu-btn:focus {
+.menu-btn:focus,
+.hide-menu:focus {
     outline: none;
 }
 
@@ -95,7 +98,7 @@ nav ul button:hover {
     .section1 nav {
         width: 100%;
         height: max-content;
-        background-color: #f4fafff1;
+        background-color: #edf7ff;
         z-index: 9;
     }
 
@@ -114,7 +117,7 @@ nav ul button:hover {
 .section2 {
     display: flex;
     justify-content: space-between;
-    padding: 40px 30px;
+    padding: 20px 30px;
 }
 
 .left {
@@ -126,22 +129,23 @@ nav ul button:hover {
 
 }
 
-.left h1 {
+.section2 .left h1 {
     font-size: 60px;
     font-weight: 510;
     margin: 20px 0px;
     width: 80%;
 }
 
-.left p {
+.section2 .left p {
     font-size: 20px;
     padding: 40px 0px;
     width: 80%;
     font-weight: 400;
 }
 
-.left button {
+.section2 .left button {
     font-size: 16px;
+    margin-top: 20px;
     padding: 20px 40px;
     border-radius: 10px;
     border: none;
@@ -149,23 +153,23 @@ nav ul button:hover {
     color: #fff;
 }
 
-.left button:hover {
+.section2 .left button:hover {
     scale: 1.1;
     transition: all 0.2s;
 }
 
-.right {
+.section2 .right {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.right img {
+.section2 .right img {
     max-width: 100%;
 }
 
 @media (max-width: 720px) {
-    .left button {
+    .section2 .left button {
         width: 100%;
     }
 
@@ -194,14 +198,13 @@ nav ul button:hover {
 
 .section3 img {
     padding: 40px 20px;
-    height: 150px;
+    height: 200px;
     margin: 20px 0px;
     mix-blend-mode: multiply;
 }
 
 
 /* section 4 */
-
 .note1 {
     display: flex;
     flex-wrap: nowrap;
@@ -528,6 +531,7 @@ nav ul button:hover {
 
 .section10 .img-right {
     width: 20%;
+
 }
 
 .section10 .img-right img {
