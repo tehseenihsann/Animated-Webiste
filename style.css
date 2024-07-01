@@ -13,10 +13,10 @@ body {
 
 body {
     overflow-x: hidden;
-    cursor: none !important;
+
 }
 
-.cursor {
+/* .cursor {
     background-color: #B9FF66;
     width: 16px;
     height: 16px;
@@ -24,7 +24,7 @@ body {
     border: 1px solid black;
     z-index: 99;
     position: absolute;
-}
+} */
 
 .section1 {
     display: flex;
@@ -58,7 +58,7 @@ nav ul li a {
     color: black;
     border-radius: 5px;
     border: none;
-    cursor: none;
+    cursor: pointer;
 }
 
 nav ul li a:hover {
@@ -73,7 +73,7 @@ nav ul button {
     padding: 10px 20px;
     border: 1px solid black;
     white-space: nowrap;
-    cursor: none;
+    cursor: pointer;
 }
 
 nav ul button:hover {
@@ -164,11 +164,12 @@ nav ul button:hover {
     border: none;
     background-color: rgb(25, 26, 35);
     color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 .section2 .left button:hover {
-    scale: 1.1;
-    transition: all 0.2s;
+    transform: scale(1.1);
 }
 
 .section2 .right {

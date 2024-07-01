@@ -76,6 +76,7 @@ tl2.from(".section2 .left h1 span", {
   opacity: 0,
   duration: 0.4,
   stagger: 0.05,
+  ease: "back.out",
 });
 
 tl2.from(".section2 .left p", {
@@ -90,6 +91,17 @@ tl2.from(".section2 .left button", {
   duration: 0.3,
   opacity: 0,
   ease: "power2.out",
+  sacle: 1.2,
+});
+
+const button = document.querySelector(".section2 .left button");
+
+button.addEventListener("mouseenter", () => {
+  gsap.to(button, { scale: 1.1, duration: 0.3, ease: "power2.out" });
+});
+
+button.addEventListener("mouseleave", () => {
+  gsap.to(button, { scale: 1, duration: 0.3, ease: "power2.out" });
 });
 
 tl2.from(".section2 .right", {
@@ -109,13 +121,13 @@ gsap.to(".section3 .marque-div", {
   ease: "none",
 });
 
-var main = document.querySelector("body");
+// var main = document.querySelector("body");
 
-main.addEventListener("mousemove", function (event) {
-  gsap.to(".cursor", {
-    x: event.x,
-    y: event.y,
-    duration: 0.5,
-    ease: "back.out",
-  });
-});
+// main.addEventListener("mousemove", function (event) {
+//   gsap.to(".cursor", {
+//     x: event.x,
+//     y: event.y,
+//     duration: 0.5,
+//     ease: "back.out",
+//   });
+// });
